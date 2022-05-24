@@ -20,7 +20,7 @@ function post() {
 export async function getStaticPaths() {
     return {
         paths: [{ params: { id: '404' } }],
-        fallback: true,
+        fallback: false,
     }
 }
 
