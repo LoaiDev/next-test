@@ -19,17 +19,15 @@ function post() {
 
 export async function getStaticPaths() {
     return {
-      paths: [
-        { params: {id: '404'} }
-      ],
-      fallback: true
-    };
+        paths: [{ params: { id: '404' } }],
+        fallback: true,
+    }
 }
 
-export async function getStaticProps(context: any) {
+export async function getStaticProps() {
     return {
-      props: {},
+        props: {},
     }
-  }
+}
 
 export default post
